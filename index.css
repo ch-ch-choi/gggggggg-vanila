@@ -1,0 +1,9 @@
+@font-face {
+    font-family: D2Coding;
+    src: url(./fonts/D2Coding-Ver1.3.2-20180524-all.woff);
+}
+
+
+body {
+    font-family: 'D2Coding';
+}
