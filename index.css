@@ -1,11 +1,80 @@
-/* @font-face {
-    font-family: D2Coding;
-    src: url(./fonts/D2Coding-Ver1.3.2-20180524-all.woff);
+
+/*      ----    BODY    ----       */
+
+body {
+    display: grid;
+    background-color: antiquewhite;
+    grid-template-areas:
+		"header     header      header"
+		"left-open  main        right-open   "
+		"footer     footer      footer";
 }
 
 
-body {
-    font-family: 'D2Coding';
-} */
+/*      ----   HEADER   ----        */ 
+
+header {
+    background-color: aquamarine;
+    grid-area: header;
+    height: 10vh;
+}
+
+/*      ---- MAIN + BRACKET ----    */ 
+
+.left-open {
+    grid-area: left-open;
+}
+
+.right-open {
+    grid-area: right-open;
+}
+
+main {
+    background-color: gray;
+    grid-area: main;
+    height: 75vh;
+
+}
+.book-wrap {
+    display: grid;
+    place-items: center;
+    grid-template-areas:
+		".     logo      logo    ."
+		".     portrait  table   ."
+
+}
+
+.book-logo {
+    grid-area: logo;
+    margin-top: 15vh;
+    
+}
+
+.book-portrait {
+    grid-area: portrait;
+    justify-self: end;
+    margin-top: 3vh;
+    width: 160px;
+}
+
+.book-table {
+    grid-area: table;
+    justify-self: start;
+    margin-top: 3vh;
+    width: 193px;
+    height: 210px;
+    overflow-y: auto;
+}
+
+.book-item-dsc {
+    margin-right: 10px;
+}
 
 
+/*      ----    FOOTER    ----       */ 
+
+footer {
+    background-color: aquamarine;
+    grid-area: footer;
+    height: 10vh;
+}
