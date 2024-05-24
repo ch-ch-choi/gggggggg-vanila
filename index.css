@@ -3,7 +3,7 @@
 
 body {
     display: grid;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     grid-template-areas:
 		"header     header      header"
 		"left-open  main        right-open   "
@@ -14,9 +14,12 @@ body {
 /*      ----   HEADER   ----        */ 
 
 header {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     grid-area: header;
     height: 10vh;
+    margin-top: 5vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
 }
 
 /*      ---- MAIN + BRACKET ----    */ 
@@ -30,7 +33,7 @@ header {
 }
 
 main {
-    background-color: gray;
+    /* background-color: gray; */
     grid-area: main;
     height: 75vh;
 
@@ -54,16 +57,20 @@ main {
     grid-area: portrait;
     justify-self: end;
     margin-top: 3vh;
+    margin-right: 5px;
     width: 160px;
+    height: 205px;
 }
 
 .book-table {
     grid-area: table;
     justify-self: start;
     margin-top: 3vh;
-    width: 193px;
+    width: 160px;
     height: 210px;
     overflow-y: auto;
+    font-size: 12px;
+    line-height: 150%;
 }
 
 .book-item-dsc {
@@ -74,7 +81,7 @@ main {
 /*      ----    FOOTER    ----       */ 
 
 footer {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     grid-area: footer;
     height: 10vh;
 }
