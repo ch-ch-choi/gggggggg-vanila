@@ -1,4 +1,3 @@
-
 /*      ----    BODY    ----       */
 
 body {
@@ -16,8 +15,8 @@ body {
 header {
     /* background-color: aquamarine; */
     grid-area: header;
-    height: 10vh;
-    margin-top: 5vh;
+    height: 6vh;
+    margin-top: 3vh;
     margin-left: 2vh;
     margin-right: 2vh;
 }
@@ -26,7 +25,9 @@ header {
 
 .left-open {
     grid-area: left-open;
+    justify-self: end;
 }
+
 
 .right-open {
     grid-area: right-open;
@@ -49,7 +50,7 @@ main {
 
 .book-logo {
     grid-area: logo;
-    margin-top: 15vh;
+    margin-top: 20vh;
     
 }
 
@@ -68,13 +69,29 @@ main {
     margin-top: 3vh;
     width: 160px;
     height: 210px;
-    overflow-y: auto;
+    overflow-y: hidden;
     font-size: 12px;
     line-height: 150%;
 }
 
+.book-table:hover{
+    overflow-y: auto;
+}
+
 .book-item-dsc {
     margin-right: 10px;
+}
+
+.book-item-stdby {
+    opacity: 0.5;
+}
+
+.book-item-indicator{
+    opacity: 0;
+}
+
+.book-item-indicator.hoverd {
+    opacity: 1;
 }
 
 
@@ -83,5 +100,5 @@ main {
 footer {
     /* background-color: aquamarine; */
     grid-area: footer;
-    height: 10vh;
+    height: 6vh;
 }
