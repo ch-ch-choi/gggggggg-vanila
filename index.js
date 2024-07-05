@@ -23,3 +23,10 @@ $(".book-item-dsc").click(function (e) {
     sessionStorage.getItem("selectedVOL", bookId)
 });
 
+$(".kor-index-toggle").click(function (e) {
+    $(".kor-index-selecter").toggle();
+});
+
+$(".eng-index-toggle").click(function (e) {
+    $(".eng-index-selecter").toggle();
+});
